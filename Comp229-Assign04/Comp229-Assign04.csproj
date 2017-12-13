@@ -118,7 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Update.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -173,13 +172,6 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Update.aspx.cs">
-      <DependentUpon>Update.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Update.aspx.designer.cs">
-      <DependentUpon>Update.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
