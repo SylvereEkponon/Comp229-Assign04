@@ -14,6 +14,12 @@ namespace Comp229_Assign04
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            BinData();
+
+        }
+
+        private void BinData()
+        {
             // populate the gridview  with existing data from db
             string name = Request.QueryString["Name"];
 
@@ -30,7 +36,37 @@ namespace Comp229_Assign04
                 modelGridView.DataSource = oneModel;
                 modelGridView.DataBind();
             }
+        }
 
+        protected void modelGridView_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            Mini mini = new Mini();
+            string name = Request.QueryString["Name"];
+            var filepath = System.Web.Hosting.HostingEnvironment.MapPath("~/Assets/Assign04.json");
+            if (File.Exists(filepath))
+            {
+                //Deserialize json file
+                var jsonData = JsonConvert.DeserializeObject<List<Mini>>(File.ReadAllText(filepath));
+
+                //object to delete
+                foreach (var item in jsonData)
+                {
+                    if (item.Name==name)
+                    {
+                         mini = item;
+                    }
+                }
+
+                ////Remove object to jsonData
+                jsonData.Remove(mini);
+
+                //Serialize jsonData to file
+                File.WriteAllText(filepath, JsonConvert.SerializeObject(jsonData));
+
+                
+                //Redirect
+                Response.Redirect("~/Default.aspx");
+            }
         }
     }
 }
