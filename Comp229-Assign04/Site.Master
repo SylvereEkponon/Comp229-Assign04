@@ -48,6 +48,7 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li id="model" runat="server"><a href="Model.aspx"><i class="fa fa-superpowers fa-lg" aria-hidden="true"></i> Model</a></li>
+                            <li id="update" runat="server"><a href="Update.aspx"><i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i> Update</a></li>
                             <li id="about" runat="server"><a href="About.aspx"><i class="fa fa-info fa-lg" aria-hidden="true"></i> About Me</a></li>
                             <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> Contact Me</a></li>
                         </ul>

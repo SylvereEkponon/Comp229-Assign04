@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Comp229_Assign04
-{
-
-
-    public partial class Site
-    {
-
+namespace Comp229_Assign04 {
+    
+    
+    public partial class Site {
+        
         /// <summary>
         /// head control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// home control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        
         /// <summary>
         /// model control.
         /// </summary>
@@ -49,7 +47,16 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl model;
-
+        
+        /// <summary>
+        /// update control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl update;
+        
         /// <summary>
         /// about control.
         /// </summary>
@@ -58,7 +65,7 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl about;
-
+        
         /// <summary>
         /// contact control.
         /// </summary>
@@ -67,7 +74,7 @@ namespace Comp229_Assign04
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
-
+        
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>

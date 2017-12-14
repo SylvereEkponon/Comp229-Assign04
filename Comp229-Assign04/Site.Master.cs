@@ -30,6 +30,9 @@ namespace Comp229_Assign04
                 case "Model":
                     model.Attributes.Add("class", "active");
                     break;
+                case "Update":
+                    update.Attributes.Add("class", "active");
+                    break;
 
 
             }
